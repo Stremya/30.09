@@ -80,15 +80,37 @@ int task1() {
 }
 
 int task2() {
-	double number;
-	double exponent;
+	double number = 0;
+	double exponent = 0;
 	cout << "Введите число, которое хотите возвести в степень: ";
 	cin >> number;
 	cout << "Введите степень(1 - 7): ";
 	cin >> exponent;
-	if (exponent > 7) {
-		cout << "Степень больше 7 нельзя!";
-		return 0;
+	switch(exponent) {
+	case 1:
+		exponent == 1;
+		break;
+	case 2:
+		exponent == 2;
+		break;
+	case 3:
+		exponent == 3;
+		break;
+	case 4:
+		exponent == 4;
+		break;
+	case 5:
+		exponent == 5;
+		break;
+	case 6:
+		exponent == 6;
+		break;
+	case 7:
+		exponent == 7;
+		break;
+	default:
+		cout << "Больше 7 нельзя" << endl;
+		break;
 	}
 	double a = pow(number, exponent);
 	cout << a << endl;
